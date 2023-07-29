@@ -1,16 +1,47 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Bootstrap Table Example</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1>Bootstrap Table Example</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th class="text-end">Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2023-07-01</td>
+                <td>Event 1</td>
+                <td class="text-end">$50.00</td>
+            </tr>
+            <tr>
+                <td>2023-07-02</td>
+                <td>Event 2</td>
+                <td class="text-end">$75.00</td>
+            </tr>
+            <tr>
+                <td>2023-07-03</td>
+                <td>Event 3</td>
+                <td class="text-end">$100.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" class="fw-bold">Total</td>
+                <td class="text-end fw-bold" id="total">$225.00</td>
+            </tr>
+        </tfoot>
+    </table>
 
+    <!-- Link to Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
